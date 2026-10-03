@@ -249,17 +249,14 @@ SELECT AVG(age)
 FROM Sailors
 WHERE rating = 10;
 ```
-![output](2b-23.png)
 # (2b) 24. Find the name and age of the oldest sailor.
 ```
-
 SELECT sname, age
 FROM Sailors
 WHERE age = (SELECT MAX(age) FROM Sailors);
 ````
 ![output](2b-24.png)
 # (2b) 25. Count the number of sailors.
-```
 SELECT COUNT(*)
 FROM Sailors;
 ```
@@ -271,7 +268,6 @@ FROM Sailors;
 ```
 ![output](2b-26.png)
 # (2b) 27. Find the names of sailors who are older than the oldest sailor with a rating of 10.
-```
 SELECT sname
 FROM sailors
 WHERE age > (
@@ -279,7 +275,6 @@ WHERE age > (
     FROM sailors
     WHERE rating = 10
 );
-```
 ![output](2b-27.png)
 
 # (2b) 28. Find the age of the youngest sailor for each rating level.
@@ -349,3 +344,8 @@ HAVING AVG(age) = (
 );
 ```
 ![output](2b-34.png)
+```
+```
+```
+
+
